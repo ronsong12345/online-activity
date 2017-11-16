@@ -6,11 +6,31 @@ $utel = $_POST['utel'];
 $uconmet = $_POST['uconmet'];
 $unvaildate = $_POST['uavaildate'];
 $ubrowser = $_POST['ubrowsers'];
-$uftype_1 = $_POST['uftype_1'];
-$uftype_2 = $_POST['uftype_2'];
-$uftype_3 = $_POST['uftype_3'];
-$uftype_4 = $_POST['uftype_4'];
 $umessage = $_POST['umessage'];
+if(isset($_POST['uftype_1'])){
+	$_POST['uftype_1'] = "Say Hello ";
+	$uftype_1 = $_POST['uftype_1'];
+}else{
+	$uftype_1 = "";
+}
+if(isset($_POST['uftype_2'])){
+	$_POST['uftype_2'] = "Complain ";
+	$uftype_2 = $_POST['uftype_2'];
+}else{
+	$uftype_2 = "";
+}
+if(isset($_POST['uftype_3'])){
+	$_POST['uftype_3'] = "Share Opinion ";
+	$uftype_3 = $_POST['uftype_3'];
+}else{
+	$uftype_3 = "";
+}
+if(isset($_POST['uftype_4'])){
+	$_POST['uftype_4'] = "Share Joke ";
+	$uftype_4 = $_POST['uftype_4'];
+}else{
+	$uftype_4 = "";
+}
 echo "Name = ".$uname."<br>";
 echo "E-mail = ".$uemail."<br>";
 echo "Telephone = ".$utel."<br>";
